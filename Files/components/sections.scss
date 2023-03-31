@@ -104,7 +104,10 @@ nav {
 						object-fit: cover;
 						border-radius: 10px;
 					}
-				}
+                                         .delete { 
+                                           cursor: pointer;
+                                         }
+                                       }
 
 				button {
 					width: 100%;
