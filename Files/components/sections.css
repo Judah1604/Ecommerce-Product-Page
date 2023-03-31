@@ -162,6 +162,9 @@ nav {
           -webkit-box-shadow: none;
                   box-shadow: none;
           display: none; }
+        .delete {
+         cursor: pointer; 
+          }
     /* line 118, sections.scss */
     nav .col .profile {
       width: 50px;
