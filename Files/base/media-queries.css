@@ -1,0 +1,68 @@
+@media screen and (max-width: 425px) {
+  /* line 4, media-queries.scss */
+  nav {
+    padding: 10px 30px;
+    width: -webkit-fill-available;
+    border: none;
+    margin: 0; }
+    /* line 10, media-queries.scss */
+    nav .col {
+      gap: 20px; }
+      /* line 13, media-queries.scss */
+      nav .col .cart-dropdown {
+        width: 95% !important;
+        right: 2%; }
+    /* line 19, media-queries.scss */
+    nav .col:nth-child(2) {
+      gap: 10px; }
+    /* line 23, media-queries.scss */
+    nav .toggle {
+      display: block !important; }
+    /* line 27, media-queries.scss */
+    nav .nav {
+      display: none !important; }
+
+  /* line 32, media-queries.scss */
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0; }
+    /* line 37, media-queries.scss */
+    main .product-img {
+      width: 100% !important;
+      height: unset !important; }
+      /* line 41, media-queries.scss */
+      main .product-img img {
+        border-radius: 0px !important; }
+    /* line 46, media-queries.scss */
+    main .other-pics {
+      display: none !important; }
+    /* line 50, media-queries.scss */
+    main .text {
+      width: -webkit-fill-available;
+      padding: 20px; }
+      /* line 54, media-queries.scss */
+      main .text .product-name {
+        font-size: 2em;
+        margin-bottom: 10px; }
+      /* line 59, media-queries.scss */
+      main .text .cart-options {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        /* line 62, media-queries.scss */
+        main .text .cart-options > * {
+          width: -webkit-fill-available !important; }
+    /* line 68, media-queries.scss */
+    main .slideControl {
+      display: block !important; }
+
+  /* line 73, media-queries.scss */
+  footer {
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=media-queries.css.map */

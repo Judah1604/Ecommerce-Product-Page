@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+	<title>Frontend Mentor | E-commerce product page</title>
+	<link rel="stylesheet" href="Files/base/common.css">
+	<link rel="stylesheet" href="Files/components/sections.css">
+	<link rel="stylesheet" href="Files/base/media-queries.css">
+</head>
+
+<body>
+	<nav>
+		<div class="col">
+			<img src="images/icon-menu.svg" alt="Menu" class="toggle">
+			<div class="logo">
+				<img src="images/logo.svg" alt="Sneakers">
+			</div>
+			<div class="nav">
+				<div class="nav-item"><a href="#">Collections</a></div>
+				<div class="nav-item"><a href="#">Men</a></div>
+				<div class="nav-item"><a href="#">Women</a></div>
+				<div class="nav-item"><a href="#">About</a></div>
+				<div class="nav-item"><a href="#">Contact</a></div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="cart">
+				<svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" class="cartIcon">
+					<path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero" />
+				</svg>
+				<div class="cartNumber">1</div>
+			</div>
+			<div class="profile">
+				<img src="images/image-avatar.png" alt="Profile">
+			</div>
+			<div class="cart-dropdown">
+				<p class="header">Cart</p>
+				<div class="cart-content">
+					<div class="notifier">Your cart is empty</div>
+					<div class="item">
+						<img src="images/image-product-1-thumbnail.jpg" alt="Product" class="product-pic">
+						<div class="text">
+							<p>Fall Limited Edition Sneakers</p>
+							<p><span class="price">$125.00</span> x <span class="noOfItems">3</span> <strong>$375.00</strong></p>
+						</div>
+						<img src="images/icon-delete.svg" alt="Delete" class="delete">
+					</div>
+					<button class="checkoutBtn">Checkout</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="nav-menu">
+		<div class="content">
+			<img src="images/icon-close.svg" alt="Close" class="closeMenu">
+
+			<div class="nav-item"><a href="#">Collections</a></div>
+			<div class="nav-item"><a href="#">Men</a></div>
+			<div class="nav-item"><a href="#">Women</a></div>
+			<div class="nav-item"><a href="#">About</a></div>
+			<div class="nav-item"><a href="#">Contact</a></div>
+		</div>
+	</div>
+
+	<main>
+		<div class="images">
+			<img src="images/icon-previous.svg" alt="Previous" class="slideControl prev">
+			<div class="product-img"><img src="images/image-product-1.jpg" alt="Sneakers"></div>
+			<img src="images/icon-next.svg" alt="Next" class="slideControl next">
+			<div class="other-pics">
+				<img src="images/image-product-1-thumbnail.jpg" alt="Sneakers-1" class="active">
+				<img src="images/image-product-2-thumbnail.jpg" alt="Sneakers-2">
+				<img src="images/image-product-3-thumbnail.jpg" alt="Sneakers-3">
+				<img src="images/image-product-4-thumbnail.jpg" alt="Sneakers-4">
+			</div>
+		</div>
+		<div class="text">
+			<div class="company">Sneaker Company</div>
+			<h1 class="product-name">
+				Fall Limited Edition Sneakers
+			</h1>
+			<p class="description">
+				These low-profile sneakers are your perfect casual wear companion. Featuring a
+				durable rubber outer sole, they’ll withstand everything the weather can offer.
+			</p>
+			<div class="prices">
+				<h2 class="our-price">$125.00</h2>
+				<h3 class="discount">50%</h3>
+			</div>
+			<h3 class="list-price">
+				$250.00
+			</h3>
+			<div class="cart-options">
+				<div class="increment">
+					<img src="images/icon-minus.svg" alt="Minus" class="control minus">
+					<h3>0</h3>
+					<img src="images/icon-plus.svg" alt="Plus" class="control plus">
+				</div>
+
+				<button class="addToCartBtn"><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero" />
+					</svg> Add To Cart</button>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://www.frontendmentor.io/profile/Judah1604">Judah1604</a>.
+		</div>
+	</footer>
+
+	<div class="lightbox">
+		<div class="content">
+			<div class="main-img">
+				<img src="images/icon-close.svg" alt="Close" class="closeIcon">
+				<div class="product-pic">
+					<img src="images/icon-previous.svg" alt="Previous" class="slideControl prev">
+					<img src="images/image-product-1.jpg" alt="Sneakers-1" class="main-product-img">
+					<img src="images/icon-next.svg" alt="Next" class="slideControl next">
+				</div>
+				<div class="other-pics">
+					<img src="images/image-product-1-thumbnail.jpg" alt="Sneakers-1" class="active">
+					<img src="images/image-product-2-thumbnail.jpg" alt="Sneakers-2">
+					<img src="images/image-product-3-thumbnail.jpg" alt="Sneakers-3">
+					<img src="images/image-product-4-thumbnail.jpg" alt="Sneakers-4">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="Files/main.js"></script>
+<script src="Files/cart.js"></script>
+
+</html>

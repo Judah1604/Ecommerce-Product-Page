@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* line 3, sections.scss */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #b6bcc8; }
+  /* line 10, sections.scss */
+  nav .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px; }
+    /* line 13, sections.scss */
+    nav .col .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      gap: 30px; }
+      /* line 16, sections.scss */
+      nav .col .nav .nav-item {
+        padding: 40px 0px;
+        border-bottom: 5px solid transparent;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease; }
+        /* line 21, sections.scss */
+        nav .col .nav .nav-item:hover {
+          border-bottom-color: #ff7d1a; }
+          /* line 24, sections.scss */
+          nav .col .nav .nav-item:hover a {
+            color: black; }
+      /* line 30, sections.scss */
+      nav .col .nav a {
+        color: #68707d;
+        text-decoration: none; }
+    /* line 36, sections.scss */
+    nav .col .cart {
+      cursor: pointer;
+      position: relative;
+      padding: 10px; }
+      /* line 41, sections.scss */
+      nav .col .cart .cartNumber {
+        font-size: 0.6em;
+        color: white;
+        padding: 2px 9px;
+        background-color: #ff7d1a;
+        position: absolute;
+        border-radius: 20px;
+        top: 3px;
+        right: 2px;
+        display: none; }
+    /* line 58, sections.scss */
+    nav .col .cartIcon:hover path {
+      fill: #1d2025; }
+    /* line 63, sections.scss */
+    nav .col .cartIcon path {
+      -webkit-transition: 0.4s ease;
+      transition: 0.4s ease; }
+    /* line 68, sections.scss */
+    nav .col .cart-dropdown {
+      position: absolute;
+      top: 15%;
+      right: 10%;
+      background-color: white;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.4);
+              box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.4);
+      width: 350px;
+      height: 250px;
+      display: none; }
+      /* line 79, sections.scss */
+      nav .col .cart-dropdown .header {
+        padding: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid #b6bcc8; }
+      /* line 85, sections.scss */
+      nav .col .cart-dropdown .notifier {
+        font-weight: 600;
+        color: #68707d;
+        width: 100%;
+        height: 140px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 0px; }
+      /* line 93, sections.scss */
+      nav .col .cart-dropdown .cart-content {
+        padding: 20px; }
+        /* line 96, sections.scss */
+        nav .col .cart-dropdown .cart-content .item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          gap: 15px;
+          margin-bottom: 1em;
+          display: none; }
+          /* line 101, sections.scss */
+          nav .col .cart-dropdown .cart-content .item .product-pic {
+            width: 60px;
+            height: 60px;
+            -o-object-fit: cover;
+               object-fit: cover;
+            border-radius: 10px; }
+        /* line 109, sections.scss */
+        nav .col .cart-dropdown .cart-content button {
+          width: 100%;
+          padding: 15px;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          display: none; }
+    /* line 118, sections.scss */
+    nav .col .profile {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border: 3px solid transparent;
+      border-radius: 50%;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      cursor: pointer; }
+      /* line 127, sections.scss */
+      nav .col .profile:hover {
+        border-color: #ff7d1a; }
+      /* line 131, sections.scss */
+      nav .col .profile img {
+        width: 100%;
+        height: 100%; }
+    /* line 137, sections.scss */
+    nav .col:nth-child(2) {
+      gap: 40px; }
+  /* line 142, sections.scss */
+  nav .toggle {
+    display: none; }
+
+/* line 147, sections.scss */
+.nav-menu {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  display: none;
+  z-index: 10; }
+  /* line 158, sections.scss */
+  .nav-menu .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    padding: 30px; }
+    /* line 165, sections.scss */
+    .nav-menu .content .closeMenu {
+      margin-bottom: 1.5em; }
+    /* line 169, sections.scss */
+    .nav-menu .content .nav-item {
+      font-weight: 600; }
+      /* line 172, sections.scss */
+      .nav-menu .content .nav-item a {
+        text-decoration: none;
+        color: #1d2025; }
+
+/* line 180, sections.scss */
+main {
+  width: 70%;
+  margin: auto;
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0px; }
+  /* line 188, sections.scss */
+  main .images .product-img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer; }
+    /* line 194, sections.scss */
+    main .images .product-img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 15px; }
+  /* line 202, sections.scss */
+  main .images .slideControl {
+    top: 45%;
+    -webkit-transform: none;
+            transform: none;
+    padding: 14px 16px;
+    width: 10px;
+    display: none; }
+  /* line 210, sections.scss */
+  main .images .prev {
+    left: 20px; }
+  /* line 214, sections.scss */
+  main .images .next {
+    right: 20px; }
+  /* line 220, sections.scss */
+  main .images .other-pics img {
+    cursor: pointer; }
+    /* line 223, sections.scss */
+    main .images .other-pics img:hover {
+      opacity: 0.6; }
+  /* line 230, sections.scss */
+  main .text {
+    width: 50%; }
+    /* line 233, sections.scss */
+    main .text .company {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.8em;
+      color: #ff7d1a;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    /* line 242, sections.scss */
+    main .text h1 {
+      font-size: 3em;
+      color: #1d2025;
+      margin-bottom: 30px; }
+    /* line 248, sections.scss */
+    main .text .description {
+      font-size: 1.1em;
+      color: #68707d;
+      line-height: 1.7;
+      width: 80%;
+      margin-bottom: 20px; }
+    /* line 256, sections.scss */
+    main .text .prices {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      gap: 20px;
+      margin-bottom: 7px; }
+      /* line 260, sections.scss */
+      main .text .prices h2 {
+        font-size: 1.8em;
+        color: #1d2025;
+        letter-spacing: 1px; }
+      /* line 266, sections.scss */
+      main .text .prices h3 {
+        color: #ff7d1a;
+        background-color: #ffede0;
+        padding: 5px 10px;
+        border-radius: 5px; }
+    /* line 274, sections.scss */
+    main .text .list-price {
+      color: #b6bcc8;
+      text-decoration: line-through; }
+    /* line 279, sections.scss */
+    main .text .cart-options {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      gap: 30px;
+      padding: 20px; }
+      /* line 283, sections.scss */
+      main .text .cart-options .increment {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 0px;
+        width: 30%;
+        background-color: #f7f8fd;
+        padding: 5px; }
+      /* line 290, sections.scss */
+      main .text .cart-options .control {
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+        cursor: pointer; }
+        /* line 294, sections.scss */
+        main .text .cart-options .control:hover {
+          opacity: 0.8; }
+
+/* line 303, sections.scss */
+footer .attribution {
+  text-align: center;
+  font-size: 0.8em; }
+  /* line 307, sections.scss */
+  footer .attribution a {
+    color: #3e52a3; }
+
+/* line 313, sections.scss */
+.lightbox {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  place-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75); }
+  /* line 322, sections.scss */
+  .lightbox .closeIcon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    -webkit-filter: brightness(2.2);
+            filter: brightness(2.2);
+    cursor: pointer; }
+  /* line 332, sections.scss */
+  .lightbox .product-pic {
+    width: 500px;
+    height: 500px;
+    overflow: hidden; }
+    /* line 337, sections.scss */
+    .lightbox .product-pic .main-product-img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 20px; }
+  /* line 345, sections.scss */
+  .lightbox .other-pics {
+    width: 80%;
+    margin: auto;
+    margin-top: 2em; }
+    /* line 350, sections.scss */
+    .lightbox .other-pics img:hover {
+      cursor: pointer; }
+      /* line 353, sections.scss */
+      .lightbox .other-pics img:hover:hover {
+        -webkit-filter: brightness(0.7);
+                filter: brightness(0.7); }
+    /* line 358, sections.scss */
+    .lightbox .other-pics .active {
+      opacity: 1; }
+
+/* line 364, sections.scss */
+.other-pics {
+  margin-top: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0px; }
+  /* line 369, sections.scss */
+  .other-pics img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px; }
+  /* line 375, sections.scss */
+  .other-pics .active {
+    opacity: 0.5;
+    border: 4px solid #ff7d1a; }
+
+/* line 381, sections.scss */
+button {
+  width: 70%;
+  padding: 1em;
+  color: white;
+  background-color: #ff7d1a;
+  font-family: inherit;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 15px 15px #ffede0;
+          box-shadow: 0px 10px 15px 15px #ffede0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer; }
+  /* line 396, sections.scss */
+  button:hover {
+    opacity: 0.7; }
+  /* line 400, sections.scss */
+  button svg {
+    margin-right: 1em; }
+    /* line 403, sections.scss */
+    button svg path {
+      fill: white; }
+
+/* line 409, sections.scss */
+.visible {
+  display: block !important; }
+
+/* line 413, sections.scss */
+.lightbox-visible {
+  display: grid !important; }
+
+/* line 417, sections.scss */
+.slideControl {
+  position: absolute;
+  top: 40%;
+  padding: 20px 24px;
+  border-radius: 50%;
+  background-color: white;
+  width: 15px;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  cursor: pointer; }
+
+/*# sourceMappingURL=sections.css.map */

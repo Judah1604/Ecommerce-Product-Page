@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$body-font-family: 'Kumbh Sans', sans-serif;
+
+// Palette
+
+$orange: hsl(26, 100%, 55%);
+$pale-orange: hsl(25, 100%, 94%);
+
+$dark-blue: hsl(220, 13%, 13%);
+$dark-grey-blue: hsl(219, 9%, 45%);
+$grey-blue: hsl(220, 14%, 75%);
+
+//Mixins
+
+@mixin flex ($justify, $align, $direction, $gap) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+	gap: $gap;
+}
